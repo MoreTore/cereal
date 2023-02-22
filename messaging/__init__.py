@@ -238,7 +238,7 @@ class SubMaster:
   def all_valid(self, service_list=None) -> bool:
     if service_list is None:  # check all
       service_list = self.valid.keys()
-    return all(self.valid[s] for s in service_list)
+    return all(self.freq_ok[s] for s in service_list if s not in self.ignore_alive)
 
   def all_checks(self, service_list=None) -> bool:
     if service_list is None:  # check all
