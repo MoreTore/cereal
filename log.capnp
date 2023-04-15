@@ -2086,6 +2086,10 @@ struct EncodeData {
 struct UserFlag {
 }
 
+struct Behavior {
+  comfortBrake @0 :Float32;
+}
+
 struct Microphone {
   soundPressure @0 :Float32;
 
@@ -2178,6 +2182,7 @@ struct Event {
     # UI services
     userFlag @93 :UserFlag;
     uiDebug @102 :UIDebug;
+    behavior @107 :Behavior;
 
     # *********** debug ***********
     testJoystick @52 :Joystick;
