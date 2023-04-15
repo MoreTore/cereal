@@ -2088,7 +2088,7 @@ struct UserFlag {
 
 struct Behavior {
   comfortBrake @0 :Float32;
-  accelerationTarget @1 :Float32;
+  comfortAccelFactor @1 :Float32;
 }
 
 struct Microphone {
