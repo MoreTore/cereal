@@ -454,6 +454,7 @@ struct CarParams {
     pid @0 :LateralPIDTuning;
     lqr @1 :LateralLQRTuning;
     torque @2 :LateralTorqueTuning;
+    ti @3 :LateralTorqueTuning;
   }
 
   minEnableSpeed @7 :Float32;
@@ -484,6 +485,7 @@ struct CarParams {
     indi @27 :LateralINDITuning;
     lqr @40 :LateralLQRTuning;
     torque @67 :LateralTorqueTuning;
+    ti @74 :LateralTorqueTuning; # Torque Interceptor tuning
   }
 
   steerLimitAlert @28 :Bool;
@@ -543,6 +545,7 @@ struct CarParams {
     steeringAngleDeadzoneDeg @5 :Float32;
     latAccelFactor @6 :Float32;
     latAccelOffset @7 :Float32;
+    latAngleFactor @8 :Float32;
   }
 
   struct LongitudinalPIDTuning {
@@ -615,6 +618,7 @@ struct CarParams {
     hongqi @26;
     body @27;
     hyundaiCanfd @28;
+    mazda2019 @29;
   }
 
   enum SteerControlType {
