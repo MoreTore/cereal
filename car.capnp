@@ -521,6 +521,7 @@ struct CarParams {
     steeringAngleDeadzoneDeg @5 :Float32;
     latAccelFactor @6 :Float32;
     latAccelOffset @7 :Float32;
+    latAngleFactor @8 :Float32;
   }
 
   struct LongitudinalPIDTuning {
@@ -594,6 +595,7 @@ struct CarParams {
     body @27;
     hyundaiCanfd @28;
     volkswagenMqbEvo @29;
+    mazda2019 @30;
   }
 
   enum SteerControlType {
