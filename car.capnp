@@ -115,6 +115,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     resumeBlocked @113;
     steerTimeLimit @115;
     vehicleSensorsInvalid @116;
+    torqueNNLoad @118;
 
     radarCanErrorDEPRECATED @15;
     communityFeatureDisallowedDEPRECATED @62;
@@ -520,7 +521,7 @@ struct CarParams {
     steeringAngleDeadzoneDeg @5 :Float32;
     latAccelFactor @6 :Float32;
     latAccelOffset @7 :Float32;
-    latAngleFactor @8 :Float32;
+    nnModelName @8 :Text;
   }
 
   struct LongitudinalPIDTuning {
