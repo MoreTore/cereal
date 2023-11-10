@@ -2173,6 +2173,11 @@ struct EncodeData {
 struct UserFlag {
 }
 
+struct Behavior {
+  maxDeacceleration @0 :Float32;
+  accelCruiseMaxFactor @1 :Float32;
+}
+
 struct Microphone {
   soundPressure @0 :Float32;
 
@@ -2270,6 +2275,7 @@ struct Event {
     # UI services
     userFlag @93 :UserFlag;
     uiDebug @102 :UIDebug;
+    behavior @107 :Behavior;
 
     # *********** debug ***********
     testJoystick @52 :Joystick;
@@ -2287,7 +2293,7 @@ struct Event {
     customReservedRawData2 @126 :Data;
 
     # *********** Custom: reserved for forks ***********
-    customReserved0 @107 :Custom.CustomReserved0;
+    # customReserved0 @107 :Custom.CustomReserved0;
     customReserved1 @108 :Custom.CustomReserved1;
     customReserved2 @109 :Custom.CustomReserved2;
     customReserved3 @110 :Custom.CustomReserved3;
