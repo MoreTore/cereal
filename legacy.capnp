@@ -571,4 +571,3 @@ struct LidarPts @0xe3d6685d4e9d8f7a {
   pkt @4 :Data;
 }
 
-
